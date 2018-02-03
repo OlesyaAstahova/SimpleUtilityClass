@@ -17,12 +17,19 @@ namespace SimpleUtilityClass
             TimeUtilClass.PrintTime();
 
             //TimeUtilClass u = new TimeUtilClass();
-
-           
-            */
-
+            
             Car viper = new Car();
-            viper.TurnOnRadio(false);
+            viper.TurnOnRadio(false); */
+
+            Shape[] myShapes = new Shape[3];
+            myShapes[0] = new Hexagon();
+            myShapes[1] = new Circle();
+            myShapes[2] = new Hexagon();
+
+            foreach (Shape s in myShapes)
+            {
+                s.Draw();
+            }
             Console.ReadLine();
         }
     }

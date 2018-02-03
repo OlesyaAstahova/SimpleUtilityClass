@@ -20,7 +20,7 @@ namespace SimpleUtilityClass
             Console.WriteLine(DateTime.Today.ToShortDateString());
         }
      }
-        */
+        
 
     class Radio
     {
@@ -36,6 +36,32 @@ namespace SimpleUtilityClass
         public void TurnOnRadio (bool onOff)
         {
             myRadio.Power(onOff);
+        }
+    }
+   */
+
+    class Shape
+    {
+
+        public virtual void Draw()
+        {
+     
+        }
+       
+    }
+    class Circle:Shape
+    {
+
+        public override void Draw()
+        {
+            Console.WriteLine("Я - круг");
+        }
+    }
+    class Hexagon:Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Я - гексагон");
         }
     }
    
