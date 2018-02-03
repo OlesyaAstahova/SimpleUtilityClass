@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleUtilityClass
 {
+    /*
     static class TimeUtilClass
     {
 
@@ -18,5 +19,25 @@ namespace SimpleUtilityClass
         {
             Console.WriteLine(DateTime.Today.ToShortDateString());
         }
+     }
+        */
+
+    class Radio
+    {
+        public void Power (bool turnOn)
+        {
+            Console.WriteLine("Radio on: {0}", turnOn);
+        }
     }
+
+    class Car
+    {
+        private Radio myRadio = new Radio();
+        public void TurnOnRadio (bool onOff)
+        {
+            myRadio.Power(onOff);
+        }
+    }
+   
+
 }
